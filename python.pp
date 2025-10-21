@@ -20,8 +20,16 @@ else:
  """
 number_game = 0
 import random
+guess_history = 0
 x = random.randint(1,10)
 while number_game != x:
-    number_game = int(input("pick a number from 1-10"))
-print("good job")
+    number_game = int(input("pick a number from 1-10 "))
+    if number_game > x:
+        print("too high")
+    if number_game < x:
+        print("too low")
+    if number_game == x:
+        print("good job")
+guess_history == guess_history += 1
+print(guess_history)
 
