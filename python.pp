@@ -26,10 +26,17 @@ while number_game != x:
     number_game = int(input("pick a number from 1-10 "))
     if number_game > x:
         print("too high")
+        guess_history +=1
+        print(number_game)
     if number_game < x:
         print("too low")
+        guess_history +=1
+        print(number_game)
     if number_game == x:
         print("good job")
-guess_history == guess_history += 1
-print(guess_history)
+        guess_history +=1
+        print("correct number:", number_game)
+print("ur total number guesses:", guess_history)
+print("numbers u guessed:",)
+
 
