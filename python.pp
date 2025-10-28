@@ -37,6 +37,5 @@ while number_game != x:
         guess_history +=1
         print("correct number:", number_game)
 print("ur total number guesses:", guess_history)
-print("numbers u guessed:",)
-
+print("numbers u guessed:")
 
