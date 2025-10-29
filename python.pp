@@ -24,7 +24,6 @@ guess_history = []
 guess = 0
 x = random.randint(1,10)
 while number_game != x:
-    
     number_game = int(input("pick a number from 1-10 "))
     guess_history.append(number_game)
     if number_game > x:
@@ -40,7 +39,8 @@ while number_game != x:
         guess +=1
         print("correct number:", number_game)
 print("ur total number guesses:", guess)
-print("numbers u guessed:", guess_history)
+for i in guess_history:
+    print("numbers u guessed:", guess_history)
 
 
 
