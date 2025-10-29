@@ -20,22 +20,27 @@ else:
  """
 number_game = 0
 import random
-guess_history = 0
+guess_history = []
+guess = 0
 x = random.randint(1,10)
 while number_game != x:
+    
     number_game = int(input("pick a number from 1-10 "))
+    guess_history.append(number_game)
     if number_game > x:
         print("too high")
-        guess_history +=1
+        guess +=1
         print(number_game)
     if number_game < x:
         print("too low")
-        guess_history +=1
+        guess +=1
         print(number_game)
     if number_game == x:
         print("good job")
-        guess_history +=1
+        guess +=1
         print("correct number:", number_game)
-print("ur total number guesses:", guess_history)
-print("numbers u guessed:")
+print("ur total number guesses:", guess)
+print("numbers u guessed:", guess_history)
+
+
 
